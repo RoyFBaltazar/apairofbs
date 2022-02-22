@@ -1,38 +1,50 @@
-.App {
+*{
+  background-color: antiquewhite;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.imgLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  text-align: center;
 }
+.navBar{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+color: black;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+padding: 0.5rem calc((100vw -1000px) /2);
+z-index: 10;
+text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.linksNav{
+  /* background: #000; */
+  display: inline-block;
+  padding: 0px 20px;
+  transition: all 0/3s ease 0s;
+  text-decoration: none;
 }
-
-.App-link {
-  color: #61dafb;
+.linksNav:hover{
+background-color: aqua;
+border-radius: 4px;
+transition: all 0/3s ease-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlogo{
+  color: azure;
+ justify-self: start;
+  height: 150px;
+  margin-left: 20px;
+  cursor: pointer;
 }
